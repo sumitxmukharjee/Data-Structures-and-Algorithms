@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaDSA.iml" filepath="$PROJECT_DIR$/.idea/JavaDSA.iml" />
-      <module fileurl="file://$PROJECT_DIR$/arrayListvsLinkedList/arrayListvsLinkedList.iml" filepath="$PROJECT_DIR$/arrayListvsLinkedList/arrayListvsLinkedList.iml" />
     </modules>
   </component>
 </project>
