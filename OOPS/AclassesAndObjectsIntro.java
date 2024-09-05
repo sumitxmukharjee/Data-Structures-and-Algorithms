@@ -83,7 +83,10 @@ public class AclassesAndObjectsIntro {
         // Special type of function in the class
         Student[] students = new Student[5];
 
-        Student sumit = new Student();
+        Student sumit = new Student(45,"Sumit Mukharjee",45.6f);
+
+        sumit.changeName("Shoe Lover");
+        sumit.message();
         System.out.println(sumit.rno);
         System.out.println(sumit.name);
         System.out.println(sumit.marks);
@@ -96,12 +99,28 @@ public class AclassesAndObjectsIntro {
         String name;
         float marks;
 
+
+        //functions inside class
+
+        void message(){
+            System.out.println("Hello My name is "+this.name);
+        }
+        void changeName(String nameName){
+            name = nameName;
+        }
         Student(){
             //we need a way to add the values of the above properties object by object.
             //we need one word to access every object
+
+            //this is a keyword used to refer to the current instance of a class.
             this.rno = 13;
             this.name = "Sumit Mukharjee";
             this.marks = 22.4f;
+        }
+        Student(int rno, String name, float marks){
+         this.rno = rno;
+         this.name = name;
+         this.marks = marks;
         }
     }
 }
