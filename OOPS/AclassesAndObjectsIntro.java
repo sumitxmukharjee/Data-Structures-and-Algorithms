@@ -90,6 +90,19 @@ public class AclassesAndObjectsIntro {
         System.out.println(sumit.rno);
         System.out.println(sumit.name);
         System.out.println(sumit.marks);
+
+        Student random =  new Student(sumit);
+        System.out.println(random.name);
+
+
+        Student random2= new Student();
+        System.out.println(random2.name);
+
+        Student one = new Student();
+        Student two = one;
+
+        one.name = "Something Something";
+        System.out.println(two.name);
     }
 
     // creating a class
@@ -108,15 +121,25 @@ public class AclassesAndObjectsIntro {
         void changeName(String nameName){
             name = nameName;
         }
+
+        Student(Student other){
+            this.name = other.name;
+            this.rno = other.rno;
+            this.marks = other.marks;
+        }
         Student(){
             //we need a way to add the values of the above properties object by object.
             //we need one word to access every object
 
             //this is a keyword used to refer to the current instance of a class.
-            this.rno = 13;
-            this.name = "Sumit Mukharjee";
-            this.marks = 22.4f;
+
+
+            //this is how you call a constructor from another constructor
+
+            this(13,"default personb",23.4f);
         }
+
+        //Student arpit = new Student(17, "Arpit", 89.7f);
         Student(int rno, String name, float marks){
          this.rno = rno;
          this.name = name;

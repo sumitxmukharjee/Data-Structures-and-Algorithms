@@ -5,7 +5,7 @@ public class APractise {
 
         Employee[] employees = new Employee[5];
 
-        Employee e1 = new Employee(345000,"Sebestian Stan",45.4f);
+        Employee e1 = new Employee(345000,"Sebastian Stan",45.4f);
 //        Employee e1 = new Employee();
 
         e1.greetingFunction();
