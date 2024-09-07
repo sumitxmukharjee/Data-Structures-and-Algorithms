@@ -18,11 +18,13 @@ public class linearSearchAlgo {
 
         for(int i=0;i<arr.length;i++){
             // check for element at every index if it is equal to target
-            int element = arr[i];
-            if(element == target){
+//            int element = arr[i];
+            if(arr[i] == target){
                 return i;
             }
         }
+
+        //if nothing executes then this
         return -1;
     }
 }
