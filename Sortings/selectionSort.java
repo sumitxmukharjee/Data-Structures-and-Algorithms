@@ -6,12 +6,7 @@ public class selectionSort {
         int n = arr.length;
 
         System.out.println("Array before sorting " + Arrays.toString(arr));
-
-//        for(int i=0;i<n;i++){
-//            for(int j=){
-//
-//            }
-//        }
+        
 
         System.out.println("Array after selection sorting " + Arrays.toString(arr));
     }
