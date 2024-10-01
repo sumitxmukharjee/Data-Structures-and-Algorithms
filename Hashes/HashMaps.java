@@ -44,7 +44,6 @@ public class HashMaps {
 //             System.out.print(num+" ");
 //         }
 //        System.out.println();
-
          for(Map.Entry<String, Integer> e:maps.entrySet()){
              System.out.println(e.getKey());
              System.out.println(e.getValue());
