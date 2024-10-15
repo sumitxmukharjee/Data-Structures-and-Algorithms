@@ -1,16 +1,16 @@
-package BasicMathsForDSA;
+#include <iostream>
+using namespace std;
 
-public class extractingDigits {
+int main() {
+    int n = 7789;
 
-    public static void main(String[] args) {
-        int n = 7789;
-
-        while (n > 0) {
-            int lastDigit = n % 10;
-            System.out.print(lastDigit + " ");
-            n = n / 10;
-            System.out.print(" " + n + " ");
-        }
-        System.out.println();
+    while (n > 0) {
+        int lastDigit = n % 10; // Extract the last digit
+        cout << lastDigit << " "; // Print the last digit
+        n = n / 10; // Remove the last digit
+        cout << n << " "; // Print the remaining number
     }
+    cout << endl;
+
+    return 0;
 }

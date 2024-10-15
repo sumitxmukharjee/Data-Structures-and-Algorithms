@@ -1,28 +1,32 @@
-package BinarySearch;
+#include <iostream>
+using namespace std;
 
-public class binarySearch {
-    public static int search(int[] arr, int target) {
-        int start = 0;
-        int end = arr.length - 1;
+// Function to perform binary search
+int search(int arr[], int size, int target) {
+    int start = 0;
+    int end = size - 1;
 
-        while (start <= end) {
-            int mid = start + (end - start) / 2;
+    while (start <= end) {
+        int mid = start + (end - start) / 2;
 
-            if (target > arr[mid]) {
-                start = mid + 1;
-            } else if (target < arr[mid]) {
-                end = mid - 1;
-            } else {
-                return mid;
-            }
+        if (target > arr[mid]) {
+            start = mid + 1;
+        } else if (target < arr[mid]) {
+            end = mid - 1;
+        } else {
+            return mid; // Return the index of the found target
         }
-
-        return -1;
     }
 
-    public static void main(String[] args) {
-        int[] arr = {3,4,6,7,9,12,16,17};
+    return -1; // Return -1 if the target is not found
+}
 
-        System.out.println(search(arr, 12));
-    }
+int main() {
+    int arr[] = {3, 4, 6, 7, 9, 12, 16, 17};
+    int target = 12;
+
+    // Perform binary search and print the result
+    cout << search(arr, sizeof(arr) / sizeof(arr[0]), target) << endl;
+
+    return 0;
 }
